@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CardList from "./components/CardList";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <img /> // Create a logo */}
+        <h1>Watchlist Tracker</h1>
       </header>
+      <div className="cards-list"></div>
+      <h1>Shows/Movie Toggle goes here</h1>
+      <CardList />
     </div>
   );
 }
